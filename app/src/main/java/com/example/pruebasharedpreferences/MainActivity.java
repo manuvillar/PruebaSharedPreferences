@@ -32,8 +32,7 @@ public class MainActivity extends AppCompatActivity {
                         Integer.parseInt(binding.idEditNumero.getText().toString()));
                 editor.commit();
 
-                startActivity(new Intent(
-                        v.getContext(), SegundoActivity.class));
+                startActivity(new Intent(v.getContext(), SegundoActivity.class));
             }
         });
     }

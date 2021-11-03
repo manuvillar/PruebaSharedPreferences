@@ -23,6 +23,7 @@ public class SegundoActivity extends AppCompatActivity {
                 getSharedPreferences("misPreferencias", Context.MODE_PRIVATE);
 
         binding.idTextViewTexto.setText(sharedPreferences.getString("texto", ""));
-        binding.idTextViewNumero.setText(sharedPreferences.getInt("numero", 0));
+        binding.idTextViewNumero.setText(
+                String.valueOf(sharedPreferences.getInt("numero", 0)));
     }
 }
